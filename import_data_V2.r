@@ -1,13 +1,14 @@
-####       MODIFY THIS PART OF THE SCRIPT TO DETERMINE THE INPUT FILE
+#### provide genotype datasheet
 data = read.csv("Example_haplotype_data_sheet.txt",skip=0,stringsAsFactors = FALSE, sep = "\t")
 
 
-
+## provide names of loci as per the genotype datasheet provided
 locinames = c("CDC1","CDC2","CDC3","CDC4","X378_PART_A","X378_PART_B","X378_PART_C",
 		    "X360i2_PART_A","X360i2_PART_B","X360i2_PART_C","X360i2.PART_D",
 		    "Junction","MSR_Left","MSR_Right")
 locinames_base = c("CDC1","CDC2","CDC3","CDC4","X378","X360","Junction","MSR")
 
+## provide ploidy of each locus - ordered the same as the locinames variable
 ploidy = c(2,2,2,2,2,2,2,2,2,2,2,1,1,1)
 
 data = data[!is.na(data$Seq_ID) & data$Seq_ID != "",]
@@ -40,16 +41,15 @@ data = cbind(ids,newdata)
 data = data.frame(data)
 
 # calculate locus-specific amplification success
+		       
 datacompleteness_bylocus = sapply(locinames_base,function (x) rowSums(cbind(datacompleteness[,grepl(x,locinames)]))>0)
 
 print("Number of loci sequenced")
 table(rowSums(datacompleteness_bylocus))
 
-#data = data[rowSums(datacompleteness_bylocus) != 0,]
-#cleandata = data[rowSums(datacompleteness_bylocus) == length(locinames_base),]
 
 
-#####original_code ----- cleandata = data[(rowSums(datacompleteness_bylocus[,c(5,7,8)]) == 3 & rowSums(datacompleteness_bylocus) >= 4) | rowSums(datacompleteness_bylocus) >= 6,] 
+# define inclusion criteria below - filters genotype datasheet to exclude specimens that fail to meet these criteria
 
 cleandata = data[(rowSums(datacompleteness_bylocus[,c(5,7,8)]) == 3 & rowSums(datacompleteness_bylocus) >= 4) | rowSums(datacompleteness_bylocus) >= 5 | (rowSums(datacompleteness_bylocus[,c(6,7,8)]) == 3 & rowSums(datacompleteness_bylocus) >= 4) | (rowSums(datacompleteness_bylocus[,c(5,6,7)]) == 3 & rowSums(datacompleteness_bylocus) >= 4) | (rowSums(datacompleteness_bylocus[,c(5,6,8)]) == 3 & rowSums(datacompleteness_bylocus) >= 4),] 
 
