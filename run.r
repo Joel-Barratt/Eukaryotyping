@@ -1,13 +1,8 @@
 require(stringr)
-require(gtools)
 require(parallel)
 
 source("import_data_V2.r")
 
-# only clean data
-#data = cleandata
-# only  first 10
-#data = data[1:10,]
 ids = data$ids
 nids = length(ids)
 
