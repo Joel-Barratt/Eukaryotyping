@@ -1,6 +1,4 @@
-
-
-###
+### Calculate matrix using Plucinski's Unsupervized Naive Bayes classifier
 
 # calculate allele frequencies
 
@@ -30,7 +28,9 @@ calculate_loglikelihood = function(v1,v2,p1,p2,ploid){
 	c(loglikelihood0,loglikelihood1,loglikelihood2)
 }
 
-epsilon = 0.3072 #rate of missed alleles, estimated by Joel May 2 2019
+##### modify epsilon value here
+					    
+epsilon = 0.3072  #rate of missed alleles, estimated by Joel May 2 2019
 
 calculate_loglikelihood2 = function(v1,v2,p1,p2,ploid){
 	# p1 is vector of allele frequencies in sample 1
@@ -76,7 +76,7 @@ for (j in 1:nloci) {
 	alleles[[j]] = unique(raw_alleles[!is.na(raw_alleles)])
 	frequencies[[j]] = sapply(alleles[[j]], function(x) sum(raw_alleles == x,na.rm=TRUE))
 	frequencies[[j]] = frequencies[[j]] / sum(frequencies[[j]])
-#	frequencies[[j]] = frequencies[[j]] / length(raw_alleles)
+
 }
 
 
@@ -132,12 +132,9 @@ write.csv(pairwisedistancematrix,"pairwisedistancematrix_Bayesian.csv")
 Bayesian_pairwisedistancematrix = pairwisedistancematrix 
 
 
-## note, joel hashed out the bottom three lines. test to see what happens without them.
-#library(ggplot2)
-#library(Rtsne)
 pairwisedistancematrix
 
 colv_clustering = rep(rgb(0,0,0), length(ids))
 
-#tsne = Rtsne(as.matrix(2-pairwisedistancematrix), check_duplicates = FALSE, pca = FALSE, perplexity=2, theta=0.0, dims=2, exaggeration_factor=500, max_iter=10000)
+
 
