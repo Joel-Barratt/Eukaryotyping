@@ -1,3 +1,6 @@
+#### Calculate matrix using Barratt's Unsupervised Heuristic Mixture Model
+
+
 alleles = list()
 frequencies = list()
 
