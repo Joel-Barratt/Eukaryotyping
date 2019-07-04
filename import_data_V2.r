@@ -57,4 +57,4 @@ data = cleandata
 ids = data$ids
 nids = length(ids)
 
-write.csv(data,"transformed_data.csv")
+####write.csv(data,"transformed_data.csv")
