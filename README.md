@@ -22,6 +22,8 @@ These scripts will generate multiple files including the Bayesian matrix, the he
 
 Finally, the ensemble matrix is clustered and visualized as a dendrogram. We prefer to use Wards clustering method and Manhattan distances, as described here: https://doi.org/10.1017/S0031182019000581
 
+Note: Parts of two of these scripts have been parallelized to reduce the time of computation ("euk_bayesian_fulldataset_V2.r" and "euk_heuristic_fulldataset.r"). The number of cores used for each of these scripts is currently set to 12 and this setting can be adjusted depending on resources avaible on the users system.
+
 The manuscript describing this method and the scripts provided here have been distributed under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike licence (http://creativecommons.org/licenses/by-nc-sa/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the same Creative Commons licence is included and the original work is properly cited.
 
 If you make use of these files and find our work helpful, please don't forget to cite us:
