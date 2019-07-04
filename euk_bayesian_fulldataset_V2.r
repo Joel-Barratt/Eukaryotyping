@@ -127,7 +127,7 @@ sapply(1:dim(allpossiblepairs)[1], function (x) pairwisedistancematrix[allpossib
 
 colnames(pairwisedistancematrix) = ids 
 rownames(pairwisedistancematrix) = ids
-write.csv(pairwisedistancematrix,"pairwisedistancematrix_Bayesian.csv")
+###write.csv(pairwisedistancematrix,"pairwisedistancematrix_Bayesian.csv")
 
 Bayesian_pairwisedistancematrix = pairwisedistancematrix 
 
