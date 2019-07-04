@@ -137,4 +137,4 @@ pairwisedistancematrix
 colv_clustering = rep(rgb(0,0,0), length(ids))
 
 
-
+print("Calculation of Bayesian matrix complete")
