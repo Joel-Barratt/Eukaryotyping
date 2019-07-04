@@ -36,5 +36,5 @@ rownames(ensemble_pairwisedistancematrix) = rownames(Bayesian_pairwisedistancema
 
 ensemble_pairwisedistancematrix = ensemble_pairwisedistancematrix/max(ensemble_pairwisedistancematrix)
 
-write.csv(ensemble_pairwisedistancematrix,"pairwisedistancematrix_ensemble.csv")
+write.csv(ensemble_pairwisedistancematrix,"Ensemble_pairwisedistancematrix.csv")
 
