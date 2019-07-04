@@ -5,7 +5,7 @@ data = read.csv("Example_haplotype_data_sheet.txt",skip=0,stringsAsFactors = FAL
 ## provide names of loci as per the genotype datasheet provided
 locinames = c("CDC1","CDC2","CDC3","CDC4","X378_PART_A","X378_PART_B","X378_PART_C",
 		    "X360i2_PART_A","X360i2_PART_B","X360i2_PART_C","X360i2.PART_D",
-		    "Mt-Junction","MSR_Left","MSR_Right")
+		    "Junction","MSR_Left","MSR_Right")
 locinames_base = c("CDC1","CDC2","CDC3","CDC4","X378","X360","Junction","MSR")
 
 ## provide ploidy of each locus - ordered the same as the locinames variable
