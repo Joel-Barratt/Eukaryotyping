@@ -89,6 +89,8 @@ pairwisedistance_heuristic = function(isolate1,isolate2){
 	c(delta,sum(delta))	
 }
 
+		       ####### MODIFY NUMBER OF CORES USED BELOW - mc.cores=##
+		       
 allpossiblepairs = expand.grid(1:nids,1:nids)
 allpossiblepairs = unique(allpossiblepairs[allpossiblepairs[,1] <= allpossiblepairs[,2],])
 pairwisedistancevector = do.call(cbind,mclapply(1:dim(allpossiblepairs)[1], function (x) pairwisedistance_heuristic(allpossiblepairs[x,1],allpossiblepairs[x,2]),mc.cores=12))
