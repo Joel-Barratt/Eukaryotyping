@@ -31,6 +31,6 @@ IMPORTANT: These scripts will not run correctly in R console or R studio. Run th
 
 The manuscript describing this method and the scripts provided here have been distributed under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike licence (http://creativecommons.org/licenses/by-nc-sa/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the same Creative Commons licence is included and the original work is properly cited.
 
-## If you make use of these files and find our work helpful, please don't forget to cite us:
+### If you make use of these files and find our work helpful, please don't forget to cite us:
 
 ```Barratt, JLN, S Park, FS Nascimento, J Hofstetter, M Plucinski, S Casillas, RS Bradbury, MJ Arrowood, Y Qvarnstrom, E Talundzic (2019) Genotyping genetically heterogeneous Cyclospora cayetanensis infections to complement epidemiological case linkage. Parasitology:1–9 doi:10.1017/S0031182019000581```
