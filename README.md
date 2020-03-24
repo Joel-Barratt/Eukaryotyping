@@ -22,7 +22,7 @@ The haplotype caller was developed and tested using a Mac running OSX Catalina 1
 
 First create a local copy of this repository:
 
-`git clone git@github.com:eldin-talundzic/Eukaryotyping.git` <!-- need to update to Joel's repo once merged -->
+`git clone git@github.com:Joel-Barratt/Eukaryotyping.git` 
 
 
 
