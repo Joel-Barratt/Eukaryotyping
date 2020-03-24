@@ -65,7 +65,11 @@ Rscript run.r
 
 ## Additional Information
 
-For additional detailed inforamation about how the Eukaryotyping algorithm works, please read []
+For additional detailed inforamation about how the Eukaryotyping algorithm works:
+
+
+Please read [BACKGROUND](symlink) for details on our code of conduct, and the process for submitting pull requests to us.
+
 
 
 ## Deployment
@@ -76,9 +80,7 @@ Add additional notes about how to deploy this on a live system
 
 
 ## Contributing
-
-<!-- need to update @Joel -->
-Please read [BACKGROUND.md](symlink) for details on our code of conduct, and the process for submitting pull requests to us.
+ <!-- need to update @Joel -->
 
 
 ## Acknowledgments
