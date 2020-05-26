@@ -16,7 +16,7 @@ Barratt, JLN, S Park, FS Nascimento, J Hofstetter, M Plucinski, S Casillas, RS B
 
 ## Getting Started
 
->These instructions will help you set up a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+>These instructions will help you set up and run this code on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 This code was developed and tested using a Mac running OSX Catalina 10.15.3. Subsequent instructions are provided _only_ for installing it on an OSX system.
 
