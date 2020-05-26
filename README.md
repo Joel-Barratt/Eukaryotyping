@@ -28,7 +28,7 @@ First create a local copy of this repository:
 
 ### Prerequisites for OSX Catalina
 
->What prerequisites you need to install this code
+>Prerequisites for installation of this code
 
 #### Xcode Command Line Tools
 
