@@ -8,7 +8,7 @@ This method constitutes a type of unsupervised [machine learning](https://en.wik
 
  3. The issue of analyzing specimens which may be extremely complex, potentially representing mixed populations of individuals. Ever try to construct a phylogeny or generate a cluster dendrogram in a situation where for one MLST marker you detect one haplotype, at another you detect three, at another you detect four and another you detect two - in the same specimen? This is essentially what we deal with when we attempt to genotype *Cyclospora cayetanensis* directly     from human stool. It gets extremely complicated.
 
-_Please cite the following [manuscript](https://www.cambridge.org/core/journals/parasitology/article/genotyping-genetically-heterogeneous-cyclospora-cayetanensis-infections-to-complement-epidemiological-case-linkage/0C51FBFFB172DF50357C1D171E9B8657) if you end up using the described Eukaryotyping haplotype caller in your work:_
+_Please cite the following [manuscript](https://www.cambridge.org/core/journals/parasitology/article/genotyping-genetically-heterogeneous-cyclospora-cayetanensis-infections-to-complement-epidemiological-case-linkage/0C51FBFFB172DF50357C1D171E9B8657) if you use the Eukaryotyping code in your work:_
 
 ```
 Barratt, JLN, S Park, FS Nascimento, J Hofstetter, M Plucinski, S Casillas, RS Bradbury, MJ Arrowood, Y Qvarnstrom, E Talundzic (2019) Genotyping genetically heterogeneous Cyclospora cayetanensis infections to complement epidemiological case linkage. Parasitology:1–9 doi:10.1017/S0031182019000581
@@ -53,7 +53,7 @@ Check that R installed
 R -h   # you should get a help print out with options for R  
 ```
 
-### Running the haplotype caller
+### Running this code
 
 >While in the folder with all the files from the cloned Eukaryotyping github run:
 
