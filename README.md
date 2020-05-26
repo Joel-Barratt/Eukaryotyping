@@ -60,7 +60,7 @@ R -h   # you should get a help print out with options for R
 ```bash
 Rscript run.r
 ```
-> This will run about 100 samples and produce matrices which can be used for further downstream analysis  
+> This will analyze 99 samples and produce a a pairwise matrix that can be used for downstream analysis.  
 
 
 ## Additional Information
