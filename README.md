@@ -1,12 +1,14 @@
 # Eukaryotyping: an ensemble similarity-based classification algorithm   
 
-This method constitutes a type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning), and was developed to address three issues:
+This method constitutes a type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning), and was developed to address four issues:
 
- 1. The common occurrence of missing data in genotyping datasets (e.g. such as a situation where 2 or 3 out of 6 multi-locus sequence typing fail to amplify for a subset of your specimens).
+ 1. The common occurrence of missing data in genotyping datasets (e.g. such as a situation where 2 or 3 out of 6 multi-locus sequence typing loci fail to amplify for a subset of your specimens).
 
  2. The use of MLST methods in the context of sexually reproducing populations, where even closely related individuals may not possess the same genotype (and may be heterozygous) due to chromosomal crossover and random reassortment of chromosomes as occurs during meiosis.
 
  3. The issue of analyzing specimens which may be extremely complex, potentially representing mixed populations of individuals. Ever try to construct a phylogeny or generate a cluster dendrogram in a situation where for one MLST marker you detect one haplotype, at another you detect three, at another you detect four and another you detect two - in the same specimen? This is essentially what we deal with when we attempt to genotype *Cyclospora cayetanensis* directly     from human stool. It gets extremely complicated.
+ 
+4. The absence of distance statistics that appropriately consider all aspects of genetic data (e.g. allele frequency, entropy of loci, nuclear versus extranuclear inheritance).
 
 _Please cite the following [manuscript](https://www.cambridge.org/core/journals/parasitology/article/genotyping-genetically-heterogeneous-cyclospora-cayetanensis-infections-to-complement-epidemiological-case-linkage/0C51FBFFB172DF50357C1D171E9B8657) if you use the Eukaryotyping code in your work:_
 
