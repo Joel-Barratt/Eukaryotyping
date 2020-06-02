@@ -1,14 +1,14 @@
 # Eukaryotyping: an ensemble similarity-based classification algorithm   
 
-This method constitutes a type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning), and was developed to address four issues:
+This method constitutes a type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning that calculates a novel distance statistic using large MLST datasets as input. This method was developed to address four main issues relating to the analysis of complex MLST datasets:
 
  1. The common occurrence of missing data in genotyping datasets (e.g. such as a situation where 2 or 3 out of 6 multi-locus sequence typing loci fail to amplify for a subset of your specimens).
 
  2. The use of MLST methods in the context of sexually reproducing populations, where even closely related individuals may not possess the same genotype (and may be heterozygous) due to chromosomal crossover and random reassortment of chromosomes as occurs during meiosis.
 
- 3. The issue of analyzing specimens which may be extremely complex, potentially representing mixed populations of individuals. Ever try to construct a phylogeny or generate a cluster dendrogram in a situation where for one MLST marker you detect one haplotype, at another you detect three, at another you detect four and another you detect two - in the same specimen? This is essentially what we deal with when we attempt to genotype *Cyclospora cayetanensis* directly     from human stool. It gets extremely complicated.
+ 3. The issue of analyzing specimens which may be extremely complex, potentially representing mixed populations of individuals. Ever try to construct a phylogeny or generate a cluster dendrogram in a situation where for one MLST marker you detect one haplotype, at another you detect three, at another you detect four and another you detect two - in the same specimen? This is essentially what we deal with when we attempt to genotype *Cyclospora cayetanensis* directly from human stool. It gets extremely complicated.
  
-4. The absence of distance statistics that appropriately consider all aspects of genetic data (e.g. allele frequency, entropy of loci, nuclear versus extranuclear inheritance).
+4. The absence of distance statistics that appropriately consider all aspects of genetic data (e.g. allele frequency, entropy of loci, nuclear versus extranuclear inheritance). Simpler metrics such as Bray-Curtis dissimilarty and Jaccard distances faily to consider these aspects of geneti data.
 
 _Please cite the following [manuscript](https://www.cambridge.org/core/journals/parasitology/article/genotyping-genetically-heterogeneous-cyclospora-cayetanensis-infections-to-complement-epidemiological-case-linkage/0C51FBFFB172DF50357C1D171E9B8657) if you use the Eukaryotyping code in your work:_
 
@@ -18,7 +18,7 @@ Barratt, JLN, S Park, FS Nascimento, J Hofstetter, M Plucinski, S Casillas, RS B
 
 ## Getting Started
 
->These instructions will help you set up and run this code on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+>These instructions will help you set up and run this code on your local machine for development and testing purposes. See deployment for notes for information on how to deploy the project on a live system.
 
 This code was developed and tested using a Mac running OSX Catalina 10.15.3. Subsequent instructions are provided _only_ for installing it on an OSX system.
 
@@ -39,7 +39,7 @@ Install Xcode
 ```bash
 xcode-select --install
 ```
-Check it installed in your $PATH (e.g., /Library/Developer/CommandLineTools)
+Check Xcode is included in your $PATH (e.g., /Library/Developer/CommandLineTools)
 
 ```bash
 xcode-select -p
@@ -49,10 +49,10 @@ xcode-select -p
 
 Go to [CRAN](https://cran.r-project.org/bin/macosx/), download and install `R-3.6.3.pkg (notarized, for Catalina)`
 
-Check that R installed
+Check that R is correctly installed
 
 ```bash
-R -h   # you should get a help print out with options for R  
+R -h   # this should return a help print out with options for R  
 ```
 
 ### Running this code
@@ -62,15 +62,15 @@ R -h   # you should get a help print out with options for R
 ```bash
 Rscript run.r
 ```
-> This will analyze 99 samples and produce a a pairwise matrix that can be used for downstream analysis.  
+> This will analyze 99 samples and produce a pairwise matrix of distances that can be used for downstream analysis.  
 
 
 ## Additional Information
 
-For additional detailed inforamation about how the Eukaryotyping algorithm works:
+For additional detailed information on how these algorithms work:
 
 
-Please read [BACKGROUND](background.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [BACKGROUND](background.md) for details on our code of conduct, and the process for submitting pull requests.
 
 
 
