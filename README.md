@@ -1,4 +1,4 @@
-# Eukaryotyping: an ensemble of similarity-based classification algorithms for calculating distances using MLST data   
+# Eukaryotyping: an ensemble of similarity-based classification algorithms for calculating distances from MLST data   
 
 This method constitutes a type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning that calculates a novel distance statistic using large MLST datasets as input. This method was developed to address four main issues relating to the analysis of complex MLST datasets:
 
@@ -67,18 +67,14 @@ Rscript run.r
 
 ## Additional Information
 
-For additional detailed information on how these algorithms work:
-
-
-Please read [BACKGROUND](background.md) for details on our code of conduct, and the process for submitting pull requests.
-
+For additional detailed information on how these algorithms work please refer to our project [background](background.md).
 
 
 ## Deployment
 
 <!-- need to update once on SciComp and CDCgov github -->
 
-Add additional notes about how to deploy this on a live system
+This section will be updated in the future.
 
 
 ## Contributing
@@ -87,9 +83,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Sincere thanks to Dr Mateusz Plucinski who wrote the majority of this code.
+
 
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
