@@ -1,4 +1,4 @@
-# Eukaryotyping: an ensemble similarity-based classification algorithm   
+# Eukaryotyping: an ensemble of similarity-based classification algorithms for calculating distances using MLST data   
 
 This method constitutes a type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning that calculates a novel distance statistic using large MLST datasets as input. This method was developed to address four main issues relating to the analysis of complex MLST datasets:
 
