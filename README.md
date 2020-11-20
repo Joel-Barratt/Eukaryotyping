@@ -81,12 +81,6 @@ For additional detailed information on how these algorithms work please refer to
 This section will be updated in the future.
 
 
-## Contributing
- <!-- need to update @Joel -->
-
-This section will be updated in the future.
-
-
 ## Acknowledgments
 
 * Sincere thanks to Dr Mateusz Plucinski who wrote the majority of this code.
