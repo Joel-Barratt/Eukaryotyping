@@ -172,13 +172,13 @@ rownames(pairwisedistancematrix) = ids
 Heuristic_pairwisedistancematrix = finalpairwisedistancematrix 
 
 
-normalized_finalpairwisedistancematrix <- finalpairwisedistancematrix/(max(finalpairwisedistancematrix))
+#normalized_finalpairwisedistancematrix <- finalpairwisedistancematrix/(max(finalpairwisedistancematrix))
 
-colnames(normalized_finalpairwisedistancematrix) <- ids
-rownames(normalized_finalpairwisedistancematrix) <- ids
+#colnames(normalized_finalpairwisedistancematrix) <- ids
+#rownames(normalized_finalpairwisedistancematrix) <- ids
 
 
-write.csv(normalized_finalpairwisedistancematrix,"Heuristic_pairwisedistancematrix_norm.csv")
+#write.csv(normalized_finalpairwisedistancematrix,"Heuristic_pairwisedistancematrix_norm.csv")
 print("Calculation of heuristic matrix complete")
 			       
 			       
