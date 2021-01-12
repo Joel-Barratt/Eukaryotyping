@@ -144,11 +144,11 @@ imputemissing_secondpass = function(isolate1) {
 		if (length(matchingsamples) > 0) {
 			sapply(1:nids, function (x) pairwisedistancematrix_components_imputed_secondpass[[j]][isolate1,x] <<- mean(pairwisedistancematrix_components_imputed[[j]][x,matchingsamples],na.rm=TRUE))
 			sapply(1:nids, function (x) pairwisedistancematrix_components_imputed_secondpass[[j]][x,isolate1] <<- mean(pairwisedistancematrix_components_imputed[[j]][x,matchingsamples],na.rm=TRUE))
-			pairwisedistancematrix_components_imputed_secondpass[[j]][isolate1,isolate1] <<- mean(diag(pairwisedistancematrix_components_imputed[[j]])[matchingsamples],na.rm=TRUE)
+			pairwisedistancematrix_components_imputed_secondpass[[j]][isolate1,isolate1] <<- mean(diag(pairwisedistancematrix_components_imputed_secondpass[[j]])[matchingsamples],na.rm=TRUE)
 		} else {
 			pairwisedistancematrix_components_imputed_secondpass[[j]][isolate1,] <<-mean(pairwisedistancematrix_components_imputed[[j]],na.rm=TRUE)
 			pairwisedistancematrix_components_imputed_secondpass[[j]][,isolate1] <<-mean(pairwisedistancematrix_components_imputed[[j]],na.rm=TRUE)
-			pairwisedistancematrix_components_imputed_secondpass[[j]][isolate1,isolate1] <<-mean(diag(pairwisedistancematrix_components_imputed[[j]]),na.rm=TRUE)
+			pairwisedistancematrix_components_imputed_secondpass[[j]][isolate1,isolate1] <<-mean(diag(pairwisedistancematrix_components_imputed_secondpass[[j]]),na.rm=TRUE)
 		}
 	}
 }
