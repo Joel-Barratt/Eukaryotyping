@@ -52,7 +52,7 @@ sub_per_locus = function(isolate1,isolate2,j) {
 		
 			shared_alleles = intersect(v1 , v2)
 			if (length(shared_alleles) > 0) {
-				temp_shared = sapply(1:nids, function (x) sum(shared_alleles %in% observeddatamatrix[[j]][x,]))
+				temp_shared = sapply(1:nids, function (x) sum(shared_alleles %in% as.matrix(observeddatamatrix[[j]][x,])))
 				notmissing = sapply(1:nids, function (x) sum(!is.na(observeddatamatrix[[j]][x,])))
 			
 				P_nu = (sum(temp_shared == length(shared_alleles)) / sum(notmissing != 0))^2
@@ -69,7 +69,7 @@ sub_per_locus = function(isolate1,isolate2,j) {
 			delta_ex_raw = 2*x*(y == 0)
 			shared_alleles = intersect(v1 , v2)
 			if (length(shared_alleles) > 0) {
-				temp_shared = sapply(1:nids, function (x) sum(shared_alleles %in% observeddatamatrix[[j]][x,]))
+				temp_shared = sapply(1:nids, function (x) sum(shared_alleles %in% as.matrix(observeddatamatrix[[j]][x,])))
 				notmissing = sapply(1:nids, function (x) sum(!is.na(observeddatamatrix[[j]][x,])))
 				P_ex = (sum(temp_shared == length(shared_alleles)) / sum(notmissing != 0))^2
 			} else {
