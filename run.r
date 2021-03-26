@@ -22,7 +22,7 @@ write.csv(Bayesian_pairwisedistancematrix_norm,"Bayesian_pairwisedistancematrix_
 Heuristic_pairwisedistancematrix_norm_temp = (Heuristic_pairwisedistancematrix - min(Heuristic_pairwisedistancematrix,na.rm=TRUE)) 
 Heuristic_pairwisedistancematrix_norm = Heuristic_pairwisedistancematrix_norm_temp  / (max(Heuristic_pairwisedistancematrix_norm_temp,na.rm=TRUE ))
 
-D = sort(Heuristic_pairwisedistancematrix_norm)[rank(Bayesian_pairwisedistancematrix_norm,ties.method="random")]
+D = sort(Bayesian_pairwisedistancematrix_norm)[rank(Heuristic_pairwisedistancematrix_norm,ties.method="random")]
 
 ensemble_pairwisedistancematrix = matrix(NA,nids,nids)
 ensemble_pairwisedistancematrix = list(Bayesian_pairwisedistancematrix_norm,Heuristic_pairwisedistancematrix_norm)
