@@ -1,6 +1,6 @@
 # Eukaryotyping: an ensemble of similarity-based classification algorithms for calculating genetic distances from MLST data   
 
-This method constitutes a type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning) that calculates a novel distance statistic using large MLST datasets as input. This method was developed to address four main issues relating to the analysis of complex MLST datasets:
+This method probably constitutes a simple type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning) that calculates a novel distance statistic using large MLST datasets as input. This method was developed to address four main issues relating to the analysis of complex MLST datasets:
 
  1. The common occurrence of missing data in genotyping datasets (e.g. such as a situation where 2 or 3 out of 6 multi-locus sequence typing loci fail to amplify for a subset of your specimens).
 
