@@ -51,7 +51,7 @@ xcode-select -p
 
 #### Local R package
 
-Go to [CRAN](https://cran.r-project.org/bin/macosx/), download and install `R-3.6.3.pkg (notarized, for Catalina)`
+Go to [CRAN](https://cran.r-project.org/bin/macosx/), download and install `R-4.0.4`
 
 Check that R is correctly installed
 
