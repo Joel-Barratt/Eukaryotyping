@@ -1,4 +1,4 @@
-# Eukaryotyping - generating accurate phylogenies from complex eukaryote-derived MLST data   
+# Eukaryotyping: Generating robust phylogenies from large and complex eukaryote-derived MLST dataset using nove haplotype-based phylogenetic methods   
 
 This method probably constitutes a simple type of unsupervised [machine learning](https://en.wikipedia.org/wiki/Machine_learning) that calculates a novel distance statistic using large MLST datasets as input. This method was developed to address four main issues relating to the analysis of complex MLST datasets:
 
