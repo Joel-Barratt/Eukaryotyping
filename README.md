@@ -10,7 +10,7 @@ The two methods described here probably constitute simple types of unsupervised 
  
 4. The absence of distance statistics that appropriately consider all aspects of genetic data (e.g. allele frequency, entropy of loci, nuclear versus extranuclear inheritance). Simpler metrics such as Bray-Curtis dissimilarty and Jaccard distances fail to consider these aspects of genetic data.
 
-_Please cite this [manuscript](https://www.cambridge.org/core/journals/parasitology/article/genotyping-genetically-heterogeneous-cyclospora-cayetanensis-infections-to-complement-epidemiological-case-linkage/0C51FBFFB172DF50357C1D171E9B8657) and this [manuscript](https://www.cambridge.org/core/journals/epidemiology-and-infection/article/evaluation-of-an-ensemblebased-distance-statistic-for-clustering-mlst-datasets-using-epidemiologically-defined-clusters-of-cyclosporiasis/F13FB2483E3DE1CF5C33706B4A1A7182#fndtn-information) if you use the Eukaryotyping code in your work:_
+_Please cite the following manuscripts:_
 
 ```
 1. Barratt, JLN, S Park, FS Nascimento, J Hofstetter, M Plucinski, S Casillas, RS Bradbury, MJ Arrowood, Y Qvarnstrom, E Talundzic (2019) Genotyping genetically heterogeneous Cyclospora cayetanensis infections to complement epidemiological case linkage. Parasitology:1–9 doi:10.1017/S0031182019000581
@@ -18,6 +18,8 @@ _Please cite this [manuscript](https://www.cambridge.org/core/journals/parasitol
 
 2. Nascimento, FS, JLN Barratt, K Houghton, M Plucinski, J Kelley, S Casillas, C Bennett, C Snider, R Tuladhar, J Zhang, B Clemons, S Madison-Antenucci, A Russell, E Cebelinski, J Haan, T Robinson, MJ Arrowood, E Talundzic, RS Bradbury, and Y Qvarnstrom (2020) Evaluation of an ensemble-based distance statistic for clustering MLST datasets using epidemiologically defined clusters of cyclosporiasis. Epidemiology & Infection: 148, e172, 1–10. https://doi.org/10.1017/
 S0950268820001697
+
+3. Jacobson, D., Y Zheng, MM Plucinski, Y Qvarnstrom, JLN Barratt (2022) Evaluation of various distance computation methods for construction of haplotype-based phylogenies from large MLST datasets. Molecular Phylogenetics and Evolution: 177, 107608. https://doi.org/10.1016/j.ympev.2022.107608
 ```
 
 ## Getting Started
